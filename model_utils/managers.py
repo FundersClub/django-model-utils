@@ -14,7 +14,7 @@ from django.db.models.constants import LOOKUP_SEP
 from django.utils.six import string_types
 
 
-class InheritanceIterable(BaseIterable):
+class InheritanceIterable(ModelIterable):
     def __iter__(self):
         queryset = self.queryset
         iter = ModelIterable(queryset)
